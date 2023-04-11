@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarun's To-do List</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="Todo_List.css">
+  </head>
+  <body>
+    <div class="container p-4">
+      <div align="center">
+      <img src="tarun.jpg" class="img-fluid" style="height: 140px; width: 370px;" alt="Tarun's Logo">
+    </div>
+      <header class="display-3 bg-black card" style="font-family: 'Times New Roman', Times, serif;" align="center">TO-DO LIST📝</header>
+      <form>
+        <div class="form-group m-4">
+          <input
+            type="text"
+            class="txt form-control"
+            id="nname"
+            placeholder="Enter Note Name"
+            required
+          />
+        </div>
+        <div class="form-group m-4">
+          <textarea placeholder="Enter Note's Description" class="form-control" id="ndesc" rows="2" required></textarea>
+        </div>
+        <div class="form-group m-4" align="center">
+          <button type="submit" class="btn btn-primary" onclick="addnote()">ADD➕</button>
+        </div>
+        <div class="form-group m-4" align="center">
+          <button type="submit" class="btn btn-primary" onclick="clearallnotes()">ALL❌</button>
+        </div>  
+        <header class="display-6 bg-black p-1 card" style="margin-left: 2.2%; color: crimson;" align="center">SAVED NOTES📜</header>
+        <div id="output" align="center">
+
+        </div>
+      </div>
+      </form>
+    <script src="Todo_List.js"></script>
+  </body>
+</html>
